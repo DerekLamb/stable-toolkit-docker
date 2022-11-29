@@ -314,7 +314,7 @@ const ImageViewer = ({setCurrentPage}) => {
                   <Image
                       id={image.fileName}
                       src={`${process.env.LOCALHOST8080}/image?url=${image.location.replaceAll(
-                          "\\", "/")}/${image.fileName}`}
+                          "\\", "/")}/${encodeURIComponent(image.fileName)}`}
                       alt=""
                       layout="intrinsic"
                       width={image.width}
@@ -995,7 +995,7 @@ const ImageViewer = ({setCurrentPage}) => {
                         <Image
                             id={imageToDisplay.fileName}
                             src={`${process.env.LOCALHOST8080}/image?url=${imageToDisplay.location.replaceAll(
-                                "\\", "/")}/${imageToDisplay.fileName}`}
+                              "\\", "/")}/${encodeURIComponent(imageToDisplay.fileName)}`}
                             alt=""
                             layout="responsive"
                             width={imageToDisplay.width}

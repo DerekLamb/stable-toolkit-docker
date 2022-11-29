@@ -37,3 +37,6 @@ stable-toolkit-front/node_modules
 stable-toolkit-front/package-lock.json
 stable-toolkit-front/.next
 stable-toolkit-front/out
+
+# Content
+images/*
